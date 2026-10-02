@@ -18,13 +18,64 @@ Five stages, always in this order. Each is a skill in `.claude/skills/` that hol
 
 `craft-video-editor` is the umbrella skill that runs all of them for one job.
 
-## Using it
+## Quick start
 
-1. Open this folder in Claude Code.
-2. Copy your footage into `projects/<job>/raw/`. The job folder is kebab-case and named after what the video is about.
-3. Run `/craft-video-editor projects/<job>`, optionally followed by direction, for example `open on the most satisfying close-up`.
+Edits run in Claude Code, opened in this folder.
 
-Claude pauses to ask before it downloads anything, deletes anything, or needs `sudo`.
+### 1. Create a job and copy in footage
+
+Run this whole block in one Terminal session. Change only `JOBNAME` for each new project, and replace the sample source path with the real path to your clip. Name the job after what the video is about, in kebab-case (never a camera filename, a date, or a suffix like `-final`). The `${JOBNAME:?...}` guard stops the paths from falling back to `projects/` if the variable is empty or unset.
+
+```bash
+cd /path/to/video-editor
+JOBNAME="paper-sketch"
+mkdir -p "projects/${JOBNAME:?Set JOBNAME before running the setup commands}"/{raw,broll,audio,assets,transcript,graphics-build,outputs}
+mkdir -p "projects/${JOBNAME:?Set JOBNAME before running the setup commands}/audio/sound-effects"
+
+cp -R sfx/sounds-effects/. "projects/${JOBNAME:?Set JOBNAME before running the setup commands}/audio/sound-effects/"
+
+cp "/absolute/path/to/your-clip.mp4" "projects/${JOBNAME:?Set JOBNAME first}/raw/"
+```
+
+Keep the original clip where it is; `cp` makes a working copy. The sound-effects copy comes from the shared `sfx/sounds-effects/` library. Supporting screen recordings or extra footage go in `broll/`.
+
+If you have a licensed background music track, copy it into the job's `audio/` folder:
+
+```bash
+cp "/absolute/path/to/licensed-music.mp3" "projects/${JOBNAME:?Set JOBNAME first}/audio/"
+```
+
+The finishing pass uses only real sample files from the job's `audio/sound-effects/`. If that folder is empty, the sound-effects step is skipped.
+
+### 2. Start the edit in Claude Code
+
+Open Claude Code in this folder and invoke the umbrella skill with the job path:
+
+```text
+/craft-video-editor projects/paper-sketch
+```
+
+Use the real job name in the Claude Code command. The Terminal variable `JOBNAME` does not carry into the chat.
+
+You can add creative direction in the same message:
+
+```text
+/craft-video-editor projects/paper-sketch — open on the most satisfying close-up.
+```
+
+The current style (`styles/editorial`) is long form 16:9 only. A 9:16 short needs its own short-form style first, so ask for that before requesting one.
+
+### What the umbrella skill does
+
+It runs rough cut, graphics, finishing and export in order. AI B-roll is skipped (generated media is not used on this channel). It follows the EarthSkyAndCo style from `brand.md` and `styles/editorial/`.
+
+It may pause and ask you if:
+
+- the footage contains speech and it's unclear whether to cut it as voiced or voiceless
+- no music track is in `audio/`
+- a review needs a creative decision
+- export wants to delete files (export always shows a dry-run plan first and waits for your yes)
+- anything needs `sudo` or a download
 
 ## Layout
 

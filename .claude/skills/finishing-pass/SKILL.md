@@ -26,7 +26,7 @@ Three sub-steps that can each run alone, but **always run in this order** when r
 ## Sound effects
 
 - **Sparse.** A handful of moments per video, not a hit on every cut.
-- **Real sample files** at about **-10 dB**, from `assets/sfx/`, a library built up over time.
+- **Real sample files** at about **-10 dB**, from the job's `audio/sound-effects/` (copied from the top-level `sfx/sounds-effects/` library at job setup; if the job copy is missing, copy it first, never edit the library). The library is built up over time.
 - **Never a synthesised tone.** A generated sine wave is instantly recognisable as not-a-sound-effect.
 - **No samples? Skip the step.** Do not fabricate one. Tell the user the library is empty.
 

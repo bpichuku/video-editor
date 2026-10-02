@@ -19,7 +19,8 @@ Stages run in this order for every format. Format only changes how graphics and 
 ```
 brand.md          colours, fonts, voice, hook, mishear list. The one file to personalise
 styles/<name>/    style.md (prose) + style.json (knobs). One folder per look
-assets/           fonts/ logos/ sfx/  (permanent, shared)
+assets/           fonts/ logos/  (permanent, shared)
+sfx/sounds-effects/  library of real sound samples (permanent, shared). Copied into each job at projects/<job>/audio/sound-effects/
 projects/<job>/   raw/ broll/ audio/ assets/ transcript/ graphics-build/ outputs/
 ```
 

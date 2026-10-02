@@ -18,7 +18,7 @@ Runs the whole pipeline for one job by calling the stage skills in order. This s
 2. Read `brand.md` and the active style (`styles/editorial/` unless told otherwise): `style.md` and `style.json`. If the requested format is not in the style's `formats` (this style is long form 16:9 only), stop and tell the user; do not improvise a short-form look.
 3. Tools: `ffmpeg -version`, `ffprobe -version`, `node --version` (22+), `uv --version`, `python3 -c "import PIL"`, `whisperx --help`, `npx hyperframes@0.8.107 doctor`. Expected doctor failures: upgrade nag, Docker, optional whisper-cpp/Kokoro/MusicGen. Check that the watch skill is available. Never run sudo without asking.
 4. `assets/fonts/` has the brand font files.
-5. Note what is present: music in `audio/` (licensed, user-supplied) and sound samples in `assets/sfx/`. Both may be absent.
+5. Note what is present: music in `audio/` (licensed, user-supplied) and sound samples in `projects/<job>/audio/sound-effects/`. If that folder is missing or empty, copy from the top-level `sfx/sounds-effects/` library (`cp -R sfx/sounds-effects/. projects/<job>/audio/sound-effects/`). Music may be absent; never download it.
 
 ## Run order
 

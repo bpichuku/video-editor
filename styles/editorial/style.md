@@ -69,4 +69,4 @@ Off by default (long form). If turned on: Nunito Black 900, 4 words max per line
 
 ## Audio
 
-Music is user-supplied and licensed. Flat bed at -18 dB, no ducking, no fade-in, 1.5s fade-out. Keep ambient craft sounds from the footage. SFX sparse, real samples from `assets/sfx/` at -10 dB.
+Music is user-supplied and licensed. Flat bed at -18 dB, no ducking, no fade-in, 1.5s fade-out. Keep ambient craft sounds from the footage. SFX sparse, real samples from the job's `audio/sound-effects/` (copied from `sfx/sounds-effects/`) at -10 dB.

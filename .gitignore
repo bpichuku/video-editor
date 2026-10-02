@@ -14,3 +14,6 @@
 *.gif
 node_modules/
 .DS_Store
+
+# regenerable by projects/*/graphics-build/build.py
+projects/*/graphics-build/parts/

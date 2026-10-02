@@ -1,0 +1,66 @@
+{
+  "base": "../outputs/base-cut.mp4",
+  "fps": 24,
+  "beats": [
+    {
+      "id": "hook",
+      "start": 0.0,
+      "end": 4.4,
+      "kind": "card",
+      "direction": "Hook card over the 4K close-up, compact single line along the bottom-left so the flicks and pencil stay clear. 'Let's make something', 'something' in $accent, rest $ink. Sub-label in $muted, $rule hairline draws in. Width-mask reveal, 0.4 s stagger. Holds 2.5 s+ after the build.",
+      "text": "Let's make something",
+      "accent_word": "something",
+      "sub": "a pencil mandala, start to finish"
+    },
+    {
+      "id": "step1",
+      "start": 10.0,
+      "end": 14.2,
+      "kind": "card",
+      "direction": "Step card, lower-left. Round $accent badge with the step number, 'start with a tiny dot' beside it, 'step 1' label in $muted above.",
+      "label": "step 1",
+      "text": "start small, in the middle",
+      "accent_word": "small"
+    },
+    {
+      "id": "step2",
+      "start": 111.5,
+      "end": 115.7,
+      "kind": "card",
+      "direction": "Step card, lower-left, same anatomy as step 1.",
+      "label": "step 2",
+      "text": "pointed petals, all the way round",
+      "accent_word": "petals"
+    },
+    {
+      "id": "step3",
+      "start": 187.2,
+      "end": 191.4,
+      "kind": "card",
+      "direction": "Step card for the real-time flicks, lower-left.",
+      "label": "step 3",
+      "text": "little flicks, a dot at each end",
+      "accent_word": "flicks"
+    },
+    {
+      "id": "stat",
+      "start": 243.0,
+      "end": 247.6,
+      "kind": "stat",
+      "direction": "Stat, lower-left panel. '15' counts up from 0 in $accent Fredoka, 'minutes' in $ink beside it, sub-label 'of drawing, one pencil' in $muted. Count completes by 1.4 s then the panel holds still (beat is under 20 s).",
+      "number": 15,
+      "unit": "minutes",
+      "sub": "of drawing, one pencil"
+    },
+    {
+      "id": "outro",
+      "start": 259.0,
+      "end": 264.4,
+      "kind": "card",
+      "direction": "Closing card, compact, bottom-left, right 40% clear. 'all done' with 'done' in $accent, sub-label under it. Exits at 264.4 so the last two seconds show the finished mandala unobstructed.",
+      "text": "all done",
+      "accent_word": "done",
+      "sub": "one pencil, one sheet of paper"
+    }
+  ]
+}

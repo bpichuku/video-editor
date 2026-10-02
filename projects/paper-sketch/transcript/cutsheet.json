@@ -1,0 +1,105 @@
+{
+ "job": "paper-sketch",
+ "path": "voiceless",
+ "note": "No speech check via WhisperX (model download declined). Cut on visible action; speed is per segment, ambient audio kept only at 1x.",
+ "fps": 24,
+ "size": [
+  1920,
+  1080
+ ],
+ "segments": [
+  {
+   "source": "raw/IMG_0259.mov",
+   "start": 704.0,
+   "end": 713.0,
+   "speed": 1,
+   "crop": [
+    1000,
+    540,
+    1600,
+    900
+   ],
+   "text": "HOOK close-up (4K crop 1600x900 scaled 1.2x): pencil tip and the first stamen flicks fanning out from the petal ring"
+  },
+  {
+   "source": "raw/IMG_0259.mov",
+   "start": 0.0,
+   "end": 104.0,
+   "speed": 5,
+   "crop": null,
+   "text": "a small dot and the first inner ring appear on blank paper"
+  },
+  {
+   "source": "raw/IMG_0259.mov",
+   "start": 104.0,
+   "end": 260.0,
+   "speed": 5,
+   "crop": null,
+   "text": "inner rings and first petal ring build up; paper gets rotated"
+  },
+  {
+   "source": "raw/IMG_0259.mov",
+   "start": 260.0,
+   "end": 440.0,
+   "speed": 4,
+   "crop": null,
+   "text": "scalloped rings and dotting around the centre"
+  },
+  {
+   "source": "raw/IMG_0259.mov",
+   "start": 440.0,
+   "end": 600.0,
+   "speed": 3.5,
+   "crop": null,
+   "text": "pointed outer petals drawn all the way round"
+  },
+  {
+   "source": "raw/IMG_0259.mov",
+   "start": 600.0,
+   "end": 705.0,
+   "speed": 3.5,
+   "crop": null,
+   "text": "shading the petals with the pencil side"
+  },
+  {
+   "source": "raw/IMG_0259.mov",
+   "start": 705.0,
+   "end": 720.0,
+   "speed": 3,
+   "crop": null,
+   "text": "first stamen lines start from the petal tips"
+  },
+  {
+   "source": "raw/IMG_0259.mov",
+   "start": 720.0,
+   "end": 740.0,
+   "speed": 1,
+   "crop": null,
+   "text": "stamen flicks in real time, dot at the end of each line"
+  },
+  {
+   "source": "raw/IMG_0259.mov",
+   "start": 740.0,
+   "end": 845.0,
+   "speed": 3,
+   "crop": null,
+   "text": "stamens added all around the mandala"
+  },
+  {
+   "source": "raw/IMG_0259.mov",
+   "start": 845.0,
+   "end": 895.0,
+   "speed": 3,
+   "crop": null,
+   "text": "last stamens and tidy-up, pencil lifts away"
+  },
+  {
+   "source": "raw/IMG_0259.mov",
+   "start": 895.0,
+   "end": 903.0,
+   "speed": 1,
+   "crop": null,
+   "text": "REVEAL: finished mandala held on screen"
+  }
+ ]
+}

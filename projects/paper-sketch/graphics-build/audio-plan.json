@@ -1,0 +1,44 @@
+{
+  "input": "../outputs/graphics.mp4",
+  "output": "../outputs/finished.mp4",
+  "captions": {
+    "enabled": false,
+    "reason": "long form, style.json captions.enabled = false"
+  },
+  "music": {
+    "file": "../audio/soundtrack/725440__madgravitystudio__slow-easy.wav",
+    "db": -12.7,
+    "db_note": "style says -18 dB; this track is about 5 dB quieter than the raga, so -12.7 dB keeps the bed at the same loudness as the version approved earlier (raga at -18 dB). Flat, no ducking, no fade-in.",
+    "ducking": false,
+    "fade_in": false,
+    "fade_out_s": 1.5,
+    "start_s": 0.0,
+    "loop": {
+      "bpm": 77,
+      "first_play_beats": 196,
+      "crossfade_beats": 5,
+      "curve": "qsin",
+      "note": "first play ends at beat 196 (152.7 s), before the track's own fading tail; second play starts on a beat and overlaps by 5 beats (3.9 s) with an equal-power crossfade"
+    },
+    "licence": "CC0 (public domain), Freesound 725440 by MadGravityStudio. No attribution required; uploader asks for a credit as a courtesy."
+  },
+  "keep_ambient_craft_sound": true,
+  "sfx_db": -10,
+  "sfx": [
+    {
+      "at": 255.6,
+      "file": "../audio/sound-effects/451649__toddcircle__pencil-drop.wav",
+      "trim_s": 0.9,
+      "fade_out_s": 0.25,
+      "why": "first drop only (impact 0.1 s into the sample), lands at 255.7 s where the real pencil touches the paper",
+      "licence": "CC0, Freesound 451649 by toddcircle"
+    }
+  ],
+  "ambient_mute": [
+    {
+      "from": 258.38,
+      "why": "reveal segment is the only long stretch of room tone in an otherwise music-only stretch; it read as noise under the closing card"
+    }
+  ],
+  "sfx_note": "Only the CC0 pencil drop is used. Earlier third-party samples removed: no clearance."
+}

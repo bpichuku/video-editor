@@ -1,7 +1,9 @@
 {
   "name": "editorial",
   "status": "starter",
-  "formats": ["long-form"],
+  "formats": [
+    "long-form"
+  ],
   "colors": {
     "bg": "$bg",
     "rule": "$rule",
@@ -29,11 +31,29 @@
     "text_source": "brand.md#default-hook-text"
   },
   "graphics": {
-    "safe_zone": { "format": "1920x1080", "title_safe_margin_pct": 10, "outro_clear_right_pct": 40 },
-    "allowed_kinds": ["stat", "card", "screenshot", "takeover", "zoom", "diagram", "broll-slot"],
+    "safe_zone": {
+      "format": "3840x2160",
+      "title_safe_margin_pct": 10,
+      "outro_clear_right_pct": 40
+    },
+    "allowed_kinds": [
+      "stat",
+      "card",
+      "screenshot",
+      "takeover",
+      "zoom",
+      "diagram",
+      "broll-slot"
+    ],
     "default_density": "text-forward",
-    "pip": { "geometry": null, "note": "Not applicable until a talking-head reference exists" },
-    "texture": { "paper_grain_opacity": 0.06, "background": "bg with subtle accent-soft vignette" },
+    "pip": {
+      "geometry": null,
+      "note": "Not applicable until a talking-head reference exists"
+    },
+    "texture": {
+      "paper_grain_opacity": 0.06,
+      "background": "bg with subtle accent-soft vignette"
+    },
     "entrance_stagger_s": 0.4
   },
   "audio": {
@@ -44,5 +64,13 @@
     "sfx_db": -10,
     "keep_ambient_craft_sound": true
   },
-  "learned": []
+  "learned": [
+    "Long form is delivered at 4K (3840x2160), not 1080p. Added by the user after the first video went out at 1080p and YouTube offered no 4K. Applies to every future video."
+  ],
+  "output": {
+    "resolution": "3840x2160",
+    "layout_grid": "1920x1080",
+    "fps": "match source",
+    "note": "Long form is always cut and exported at 4K. Graphics are designed on the 1920x1080 grid and rendered at 2x (hyperframes --resolution landscape-4k). Never downscale a 4K source."
+  }
 }

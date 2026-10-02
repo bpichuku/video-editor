@@ -1,0 +1,94 @@
+{
+ "note": "voiceless job: no words, one entry per segment, times on the edited timeline",
+ "duration": 266.381,
+ "segments": [
+  {
+   "start": 0,
+   "end": 9.0,
+   "source_start": 704.0,
+   "source_end": 713.0,
+   "speed": 1,
+   "text": "HOOK close-up (4K punch-in): first stamen flicks fan out from the finished petal ring"
+  },
+  {
+   "start": 9.0,
+   "end": 29.8,
+   "source_start": 0.0,
+   "source_end": 104.0,
+   "speed": 5,
+   "text": "a small dot and the first inner ring appear on blank paper"
+  },
+  {
+   "start": 29.8,
+   "end": 61.0,
+   "source_start": 104.0,
+   "source_end": 260.0,
+   "speed": 5,
+   "text": "inner rings and first petal ring build up; paper gets rotated"
+  },
+  {
+   "start": 61.0,
+   "end": 106.0,
+   "source_start": 260.0,
+   "source_end": 440.0,
+   "speed": 4,
+   "text": "scalloped rings and dotting around the centre"
+  },
+  {
+   "start": 106.0,
+   "end": 151.714,
+   "source_start": 440.0,
+   "source_end": 600.0,
+   "speed": 3.5,
+   "text": "pointed outer petals drawn all the way round"
+  },
+  {
+   "start": 151.714,
+   "end": 181.714,
+   "source_start": 600.0,
+   "source_end": 705.0,
+   "speed": 3.5,
+   "text": "shading the petals with the pencil side"
+  },
+  {
+   "start": 181.714,
+   "end": 186.714,
+   "source_start": 705.0,
+   "source_end": 720.0,
+   "speed": 3,
+   "text": "first stamen lines start from the petal tips"
+  },
+  {
+   "start": 186.714,
+   "end": 206.714,
+   "source_start": 720.0,
+   "source_end": 740.0,
+   "speed": 1,
+   "text": "stamen flicks in real time, dot at the end of each line"
+  },
+  {
+   "start": 206.714,
+   "end": 241.714,
+   "source_start": 740.0,
+   "source_end": 845.0,
+   "speed": 3,
+   "text": "stamens added all around the mandala"
+  },
+  {
+   "start": 241.714,
+   "end": 258.381,
+   "source_start": 845.0,
+   "source_end": 895.0,
+   "speed": 3,
+   "text": "last stamens and tidy-up, pencil lifts away"
+  },
+  {
+   "start": 258.381,
+   "end": 266.381,
+   "source_start": 895.0,
+   "source_end": 903.0,
+   "speed": 1,
+   "text": "REVEAL: finished mandala held on screen"
+  }
+ ]
+}

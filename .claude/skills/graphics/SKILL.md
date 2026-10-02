@@ -44,9 +44,13 @@ A script must check: required fields present, `kind` in the allowed set, start <
 | Format | Frame | Keep key visuals inside |
 |---|---|---|
 | Short form | 1080 x 1920 | y 200 to 1620. Top 200 px and bottom 300 px are background only (platform UI, username, audio tag, progress bar land there). Not a guideline. |
-| Long form | 1920 x 1080 | Title safe, 10% margins. Keep the outro's right 40% clear for end-screen cards. |
+| Long form | 3840 x 2160 delivered (laid out on a 1920 x 1080 grid) | Title safe, 10% margins. Keep the outro's right 40% clear for end-screen cards. |
 
 ## 2. The build
+
+GSAP is a permanent shared asset at `assets/lib/gsap.min.js` (3.14.2). The build script copies it into each part. Never load it from a CDN and never install it per job.
+
+Long form is delivered at 4K. Lay every graphic out on a 1920 x 1080 grid (the style's pixel measures are in these units) and render it at 2x with `--resolution landscape-4k`; the CLI documents this as the same layout at a higher device scale. Before building the rest, render one part and confirm with `ffprobe` that it is 3840 x 2160. Footage motion (zoom, punch-in) is cropped from the 4K source in FFmpeg and should stay at or above 1:1 where it can.
 
 Generate compositions from a script. Do not hand-write HTML per graphic. One build script in `projects/<job>/graphics-build/` holds the shared CSS, per-graphic markup and per-graphic animation, and emits one composition file per part plus a render script and an assemble script. **This folder is the real progress on the job. It lives in the project, never only in a temp folder** (temp is volatile; an overnight clear has wiped an entire build). Only heavy regenerable renders belong in a cache. Load fonts from `assets/fonts/` files, never system fonts.
 

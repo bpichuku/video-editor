@@ -19,7 +19,7 @@ Stages run in this order for every format. Format only changes how graphics and 
 ```
 brand.md          colours, fonts, voice, hook, mishear list. The one file to personalise
 styles/<name>/    style.md (prose) + style.json (knobs). One folder per look
-assets/           fonts/ logos/  (permanent, shared)
+assets/           fonts/ logos/ lib/  (permanent, shared; lib/ holds gsap.min.js)
 sfx/sounds-effects/  library of real sound samples (permanent, shared). Copied into each job at projects/<job>/audio/sound-effects/
 projects/<job>/   raw/ broll/ audio/ assets/ transcript/ graphics-build/ outputs/
 ```
@@ -30,6 +30,7 @@ Top half is taste (permanent). `projects/` is jobs (disposable). Do not add note
 
 - Read `brand.md` and the active `styles/<name>/style.json` before any creative decision. Colours are tokens (`$accent`), never hex.
 - Job folder: kebab-case, named after what the video is about. Never a camera filename, a date, or a stage suffix (`-final`, `-v2`).
+- Long form is always cut and exported at 4K (3840x2160). Never downscale a 4K source to 1080p. Details in the style file and the `rough-cut` and `graphics` skills.
 - Source footage is copied into `raw/`, never moved, never modified.
 - Do not start editing until the user drops a clip into `projects/<job>/raw/` and asks.
 - Ask before running anything that needs sudo. Ask before downloading anything.

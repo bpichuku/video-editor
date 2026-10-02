@@ -2,7 +2,7 @@
 
 STATUS: starter, written without a reference video. Per the playbook, a style is only done when new videos can be made from this file alone. Treat every section marked TODO-REFERENCE as provisional, and rebuild them with the two-pass reference method (see the graphics skill) once Priya picks a reference video. Corrections from reviews get absorbed into `style.json` `learned` and this file.
 
-Formats: long form 16:9 (1920x1080). Colours are tokens from brand.md (`$bg`, `$ink`, `$accent`...). Never hardcode hex.
+Formats: long form 16:9, delivered at 4K (3840x2160). Always cut at 4K, never downscaled. Graphics are laid out on a 1920x1080 grid and rendered at 2x, so every pixel measure in this file is in 1080p units and doubles in the final frame. Colours are tokens from brand.md (`$bg`, `$ink`, `$accent`...). Never hardcode hex.
 
 ## What this look is
 

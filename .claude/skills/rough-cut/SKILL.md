@@ -57,6 +57,7 @@ Tell the user explicitly when a job is running the voiceless path, since the "la
 - **Stumbles hide inside long word spans.** WhisperX sometimes merges a stumble and its retake into one word span over 1.2 s. If a word's duration looks wrong for what it should sound like, run silence detection across that span before deciding the cut.
 - **The transcript will mishear.** Cross-check before killing a line. "Claude" heard as "cloud" makes a good sentence look broken.
 - **Screen recordings can carry a chapter track** that inflates reported duration and leaves a black tail. Probe with `ffprobe` and strip chapters (`-map_chapters -1`) when re-encoding.
+- **Long form is cut at 4K (3840x2160).** Scale every segment to 3840x2160 and never downscale a 4K source to 1080p. Use hardware decode (`-hwaccel videotoolbox`) and encode at about 45 to 50 Mbps with `h264_videotoolbox`. If a source is below 4K, tell the user before upscaling anything. A crop-based punch-in stays sharp only while the crop is 1920x1080 or larger in the source; smaller crops upscale and should be used sparingly.
 - Probe the real frame rate with `ffprobe`. Never guess. (23.976 is `24000/1001`, not 24.)
 
 ## Mishear handling

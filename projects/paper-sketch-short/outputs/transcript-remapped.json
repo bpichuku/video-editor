@@ -1,0 +1,78 @@
+{
+ "note": "voiceless job: no words, one entry per segment, times on the edited timeline. The build is split into chunks only so each chunk can carry its own crop path.",
+ "duration": 30.0,
+ "segments": [
+  {
+   "id": "hook",
+   "start": 0,
+   "end": 4.8,
+   "source_start": 705.5,
+   "source_end": 710.3,
+   "speed": 1,
+   "text": "HOOK close-up: pencil tip and the stamen flicks fanning out from the petal ring, real time"
+  },
+  {
+   "id": "build1",
+   "start": 4.8,
+   "end": 8.163,
+   "source_start": 0,
+   "source_end": 152,
+   "speed": 45.2041,
+   "text": "time-lapse chunk 1: the mandala growing, crop following the drawing (source 0s to 152s)"
+  },
+  {
+   "id": "build2",
+   "start": 8.163,
+   "end": 11.525,
+   "source_start": 152,
+   "source_end": 304,
+   "speed": 45.2041,
+   "text": "time-lapse chunk 2: the mandala growing, crop following the drawing (source 152s to 304s)"
+  },
+  {
+   "id": "build3",
+   "start": 11.525,
+   "end": 14.888,
+   "source_start": 304,
+   "source_end": 456,
+   "speed": 45.2041,
+   "text": "time-lapse chunk 3: the mandala growing, crop following the drawing (source 304s to 456s)"
+  },
+  {
+   "id": "build4",
+   "start": 14.888,
+   "end": 18.25,
+   "source_start": 456,
+   "source_end": 608,
+   "speed": 45.2041,
+   "text": "time-lapse chunk 4: the mandala growing, crop following the drawing (source 456s to 608s)"
+  },
+  {
+   "id": "build5",
+   "start": 18.25,
+   "end": 21.613,
+   "source_start": 608,
+   "source_end": 760,
+   "speed": 45.2041,
+   "text": "time-lapse chunk 5: the mandala growing, crop following the drawing (source 608s to 760s)"
+  },
+  {
+   "id": "build6",
+   "start": 21.613,
+   "end": 24.4,
+   "source_start": 760,
+   "source_end": 886,
+   "speed": 45.2041,
+   "text": "time-lapse chunk 6: the mandala growing, crop following the drawing (source 760s to 886s)"
+  },
+  {
+   "id": "reveal",
+   "start": 24.4,
+   "end": 30.0,
+   "source_start": 886.2,
+   "source_end": 891.8,
+   "speed": 1,
+   "text": "REVEAL: last pencil is set down at source 887.0 and the finished mandala is held"
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+  "name": "short",
+  "status": "draft",
+  "formats": [
+    "short-form"
+  ],
+  "colors": {
+    "bg": "$bg",
+    "rule": "$rule",
+    "accent": "$accent",
+    "accent_soft": "$accent-soft",
+    "ink": "$ink",
+    "muted": "$muted"
+  },
+  "fonts": {
+    "display": "Fredoka",
+    "caption": "Nunito",
+    "caption_weight": 900
+  },
+  "output": {
+    "resolution": "1080x1920",
+    "aspect": "9:16",
+    "fps": "match source",
+    "target_duration_s": 30,
+    "max_duration_s": 60,
+    "framing": "full-height 9:16 crop from the 4K source, centred on the subject and keyframed to follow it. Never letterbox a 16:9 frame into a vertical canvas.",
+    "note": "Shorts are delivered at 1080x1920. The long-form 4K rule does not apply, but the crop is always taken from the 4K source so the image stays sharp.",
+    "colour": "Phone footage is often HDR (HLG, 10-bit). Tone-map it to SDR (zscale + hable) and tag the output bt709, so the brand colours on the hook card display exactly."
+  },
+  "captions": {
+    "enabled": false,
+    "reason": "Voiceless. The single hook card is the only on-screen text."
+  },
+  "hook": {
+    "behaviour": "text-card-over-first-footage",
+    "start_s": 0.0,
+    "duration_s": 3.0,
+    "text_source": "brand.md#default-hook-text"
+  },
+  "graphics": {
+    "safe_zone": {
+      "format": "1080x1920",
+      "key_visuals_y": [
+        200,
+        1620
+      ],
+      "top_background_only_px": 200,
+      "bottom_background_only_px": 300,
+      "side_margin_px": 60
+    },
+    "allowed_kinds": [
+      "card"
+    ],
+    "max_graphics": 1,
+    "note": "Short form raw: exactly one hook card, nothing else. No step cards, no stats.",
+    "entrance_stagger_s": 0.4
+  },
+  "audio": {
+    "music_bed_db": -18,
+    "music_ducking": false,
+    "music_fade_in": false,
+    "music_fade_out_s": 1.0,
+    "sfx_db": -10,
+    "keep_ambient_craft_sound": true,
+    "ambient_note": "Ambient craft sound is kept only on real-time segments. Sped-up segments are music only.",
+    "loudness_target_lufs": -16,
+    "true_peak_max_db": -1.4,
+    "loudness_note": "Shorts play in a feed next to louder videos, so the finished mix targets about -16 LUFS integrated (the long-form videos sit near -28 LUFS, which is too quiet for a feed). Measure the unprocessed mix, apply one static gain, and cap peaks with a limiter (auto-level off) so the encoded true peak stays under -1.4 dBFS. Judge the measured result, not the setting."
+  },
+  "learned": []
+}

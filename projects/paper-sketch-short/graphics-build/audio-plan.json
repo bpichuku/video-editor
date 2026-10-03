@@ -1,0 +1,40 @@
+{
+  "input": "../outputs/graphics.mp4",
+  "output": "../outputs/finished.mp4",
+  "captions": {
+    "enabled": false,
+    "reason": "voiceless; the hook card is the only on-screen text (style: short)"
+  },
+  "music": {
+    "file": "../audio/soundtrack/725440__madgravitystudio__slow-easy.wav",
+    "db": -11.5,
+    "db_note": "starting level; adjust so the finished mix averages about -29 dB mean volume (style: short)",
+    "ducking": false,
+    "fade_in": false,
+    "fade_out_s": 1.0,
+    "start_s": 0.5,
+    "licence": "CC0 (public domain), Freesound 725440 by MadGravityStudio. No attribution required; uploader asks for a credit as a courtesy.",
+    "start_note": "track opens with 0.5 s of near-silence then a chord; bed starts on the chord so a Short has music from frame 0 (no fade added)"
+  },
+  "keep_ambient_craft_sound": true,
+  "ambient_mute": [
+    {
+      "from": 25.8,
+      "why": "room tone under the reveal read as noise on the long video; keep it until the pencil lands, then music only"
+    }
+  ],
+  "sfx_db": -4,
+  "sfx": [
+    {
+      "at": 25.1,
+      "file": "../audio/sound-effects/451649__toddcircle__pencil-drop.wav",
+      "trim_s": 0.9,
+      "fade_out_s": 0.25,
+      "why": "pencil lands at source 887.0 = short 25.2 s; sample impact is 0.1 s in",
+      "licence": "CC0, Freesound 451649 by toddcircle"
+    }
+  ],
+  "gain_db": 13.2,
+  "gain_note": "Static gain from measurement: the unprocessed mix is -27.3 LUFS; a Short in a feed needs about -16 LUFS. The limiter (-1.9 dB, auto-level off) catches the peaks, which costs about 1.5 LU, so the gain is 13.2 dB.",
+  "sfx_note": "Pencil drop raised from the style's -10 dB to -4 dB for this Short: at -10 it sat at the same level as the music's own peaks and was inaudible. No ducking (style forbids it)."
+}

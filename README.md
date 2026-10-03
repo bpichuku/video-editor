@@ -63,7 +63,7 @@ You can add creative direction in the same message:
 /craft-video-editor projects/paper-sketch — open on the most satisfying close-up.
 ```
 
-The current style (`styles/editorial`) is long form 16:9 only. A 9:16 short needs its own short-form style first, so ask for that before requesting one.
+There are two styles. `styles/editorial` is long form 16:9 (delivered at 4K). `styles/short` is a draft for 9:16 Shorts (1080x1920, about 30 seconds, one hook card). The default is `editorial`, so for a Short say so in the message, for example `/craft-video-editor projects/<job> — make it a Short with the short style`.
 
 ### What the umbrella skill does
 

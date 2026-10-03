@@ -1,0 +1,10 @@
+{
+  "base": "../outputs/base-cut.mp4",
+  "fps": 24,
+  "size": [1080, 1920],
+  "beats": [
+    {"id": "hook", "start": 0.0, "end": 4.8, "kind": "card",
+     "direction": "The one hook card (short form: exactly one graphic). Cream panel on the lower band (y 1210 to 1590, inside the 200-1620 safe zone, 60 px side margin) so the pencil tip and the flick fan above stay clear. 'Let's make' / 'something' on two lines, 'something' in $accent, rest $ink. Sub-label 'a pencil mandala, start to finish' in $muted, $rule hairline draws in under it. Width-mask reveal, 0.4 s stagger, full text holds 2.5 s+ before it leaves.",
+     "line1": "Let's make", "line2": "something", "accent_word": "something", "sub": "a pencil mandala, start to finish"}
+  ]
+}
